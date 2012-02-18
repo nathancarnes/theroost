@@ -1,7 +1,7 @@
 @import 'normalize';
 
 /* Colors */
-@copy_color: #2d2b2f;
+@copy_color: #3f3c42;
 @light_copy_color: #616060;
 @lighter_copy_color: #777575;
 @light_neutral_color: #d2ccc8;
@@ -25,7 +25,7 @@
 .serif{ font-family: 'adobe-caslon-pro', Garamond, 'Hoefler Text', 'Times New Roman', Times, serif; }
 .sans{ font-family: 'league-gothic', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; } 
 
-html{ background: @copy_color url(../../images/backgrounds/html.png); .reset; height: 100%;
+html{ background: @copy_color url(../../images/backgrounds/html.png); .reset; height: 100%; overflow-y: scroll;
   body{ .serif; color: @copy_color; background: @light_neutral_color repeat-y url(../../images/backgrounds/body.jpg); margin: 0 auto; width: 920px; padding: 20px; min-height: 100%; box-shadow: 0 0 30px rgba(0,0,0,.6); text-shadow: 0 1px 0 rgba(255,255,255,.4); }   
 }
            
@@ -49,6 +49,10 @@ header.main{ background: no-repeat bottom right url(../../images/divider.png); o
         a{ color: @light_copy_color; display: block; padding: 10px; .sans; font-size: 19px; text-transform: uppercase;
           &:hover{ color: @contrasting_color; }
         }
+        
+        &.current-menu-item a{ color: @copy_color; 
+          &:hover{ color: @contrasting_color; }          
+        }
       }
     }
   }  
@@ -58,4 +62,19 @@ header.main{ background: no-repeat bottom right url(../../images/divider.png); o
       &:hover{ color: @contrasting_color; }
     }
   }                     
+}       
+
+/* Content */
+section.main{ min-height: 350px; }        
+
+/* Footer */
+footer.main{ padding: 20px 20px 0; margin-top: 20px; background: no-repeat top center url(../../images/backgrounds/footer.png);
+  .copyright{ font-size: 13px; color: @lighter_copy_color; float: left; line-height: 30px; }
+  .social{ float: right; 
+    a{ float: left; margin-left: 40px; height: 30px; background: no-repeat center center; text-indent: -999em; 
+      &.facebook{ width: 84px; background-image: url(../../images/facebook.png); }
+      &.youtube{ width: 63px; background-image: url(../../images/youtube.png); }
+      &.twitter{ width: 74px; background-image: url(../../images/twitter.png); }
+    }
+  }  
 }
