@@ -1,0 +1,54 @@
+@import 'normalize';
+
+/* Colors */
+@copy_color: #2d2b2f;
+@light_copy_color: #616060;
+@light_neutral_color: #d2ccc8;
+@mid_neutral_color: #aaa39e;
+@dark_neutral_color: #85807c;
+@cool_neutral_color: #999;
+@accent_color: #4aa49f;
+@contrasting_color: #339999;                                                       
+@warm_accent_color: #d7b496;          
+
+.reset{ padding: 0; margin: 0; }
+.reset_list{ .reset; list-style-type: none; }
+
+/* Fonts */
+.serif{ font-family: 'adobe-caslon-pro', Garamond, 'Hoefler Text', 'Times New Roman', Times, serif; }
+.sans{ font-family: 'league-gothic', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; } 
+
+html{ background: @copy_color url(../../images/backgrounds/html.png); .reset; height: 100%;
+  body{ .serif; color: @copy_color; background: @light_neutral_color repeat-y url(../../images/backgrounds/body.jpg); margin: 0 auto; width: 920px; padding: 20px; min-height: 100%; box-shadow: 0 0 30px rgba(0,0,0,.6); text-shadow: 0 1px 0 rgba(255,255,255,.4); }   
+}
+           
+a{ color: @contrasting_color; text-decoration: none; 
+  &:hover{ color: @contrasting_color - 30%; }
+}
+
+h1, h2, h3, h4{ .sans; padding-top: 0; margin-top: 0; }
+
+/* Header */
+header.main{ background: no-repeat bottom right url(../../images/divider.png); overflow: hidden; margin-bottom: 40px;
+  h1#logo{ .reset; float: left; 
+    a{ display: block; height: 128px; width: 128px; background: url('../../images/logo.png'); text-indent: -999em; }
+  }          
+  
+  #player{ float: right; background: #aaa; text-indent: -999em; height: 20px; width: 300px; }
+  
+  nav{ float: right; clear: right;
+    ul{ .reset_list; margin-top: 20px;
+      li{ .reset; float: left; margin-left: 40px;
+        a{ color: @light_copy_color; display: block; padding: 10px; .sans; font-size: 20px;
+          &:hover{ color: @contrasting_color; }
+        }
+      }
+    }
+  }  
+  
+  .social{ clear: right; float: right; color: @light_copy_color; font-style: italic; margin-right: 10px; margin-top: 20px; margin-bottom: 10px;
+    a{ .sans; color: @light_copy_color; font-style: normal; font-size: 1.1em; 
+      &:hover{ color: @contrasting_color; }
+    }
+  }                     
+}
