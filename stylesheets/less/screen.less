@@ -26,14 +26,15 @@
 .sans{ font-family: 'league-gothic', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; } 
 
 html{ background: @copy_color url(../../images/backgrounds/html.png); .reset; height: 100%; overflow-y: scroll;
-  body{ .serif; color: @copy_color; background: @light_neutral_color repeat-y url(../../images/backgrounds/body.jpg); margin: 0 auto; width: 920px; padding: 20px; min-height: 100%; box-shadow: 0 0 30px rgba(0,0,0,.6); text-shadow: 0 1px 0 rgba(255,255,255,.4); }   
+  body{ .serif; color: @copy_color; background: @light_neutral_color repeat-y url(../../images/backgrounds/body.jpg); margin: 0 auto; width: 920px; padding: 20px; min-height: 97%; box-shadow: 0 0 30px rgba(0,0,0,.6); text-shadow: 0 1px 0 rgba(255,255,255,.4); }   
 }
            
 a{ color: @contrasting_color; text-decoration: none; .transition; 
   &:hover{ color: @contrasting_color - 30%; }
 }
 
-h1, h2, h3, h4{ .sans; padding-top: 0; margin-top: 0; }
+h1, h2, h3, h4{ .sans; padding-top: 0; margin-top: 0; font-weight: normal; }
+h2{ text-transform: uppercase; font-size: 36px; }
 
 /* Header */
 header.main{ background: no-repeat bottom right url(../../images/divider.png); overflow: hidden; margin-bottom: 40px;
@@ -68,7 +69,7 @@ header.main{ background: no-repeat bottom right url(../../images/divider.png); o
 section.main{ min-height: 350px; }        
 
 /* Footer */
-footer.main{ padding: 20px 20px 0; margin-top: 20px; background: no-repeat top center url(../../images/backgrounds/footer.png);
+footer.main{ padding: 20px 20px 0; margin-top: 20px; background: no-repeat top center url(../../images/backgrounds/footer.png); overflow: hidden;
   .copyright{ font-size: 13px; color: @lighter_copy_color; float: left; line-height: 30px; }
   .social{ float: right; 
     a{ float: left; margin-left: 40px; height: 30px; background: no-repeat center center; text-indent: -999em; 
