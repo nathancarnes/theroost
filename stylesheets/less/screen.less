@@ -14,6 +14,7 @@
 
 .reset{ padding: 0; margin: 0; }
 .reset_list{ .reset; list-style-type: none; }      
+.clear{ clear: both; }
 
 .transition(@duration:0.2s, @ease:ease-out) {
   -webkit-transition: all @duration @ease;
@@ -78,4 +79,35 @@ footer.main{ padding: 20px 20px 0; margin-top: 20px; background: no-repeat top c
       &.twitter{ width: 74px; background-image: url(../../images/twitter.png); }
     }
   }  
+}           
+
+/* Home */
+.home{
+  p#masthead{ .sans; font-size: 40px; margin: 0 0 20px; }
+  #slider{ position: relative;
+    .slide{ height: 360px; color: #aaa; text-shadow: 0 -1px 0 rgba(0,0,0,.4); 
+      img{ display: block; position: absolute; height: 360px; width: 920px; left: 0; }
+      .info{ position: absolute; width: 200px; right: 60px; top: 60px;
+        h4{ font-size: 30px; margin-bottom: 20px; }
+        a{ .sans; font-size: 30px; }  
+        .date, .time{ font-size: 22px; line-height: 1; }
+        .time{ margin-bottom: 60px; }      
+      }
+    }
+  }
+  .slider_nav{ float: right; margin: 15px 0 20px;
+    a{ height: 11px; width: 11px; float: left; text-indent: -999em; background: no-repeat top center url(../../images/inactive_dot.png); margin-left: 5px;
+      &.current, &.active, &:hover{ background-image: url(../../images/active_dot.png); }
+    }
+  }     
+  
+  #featured{ overflow: hidden; 
+    h3{ font-size: 30px; text-transform: uppercase; margin-bottom: 10px; }
+    .featured_artist{ float: left; width: 290px; margin-right: 25px;
+      &:last-child{ margin-right: 0; } 
+      img{ display: block; margin-bottom: 10px; } 
+      h4{ font-size: 24px; margin-bottom: 10px; }   
+      p{ font-size: 15px; margin-bottom: 1em; line-height: 18px; }
+    }
+  }
 }
