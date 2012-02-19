@@ -7,21 +7,32 @@
    
   <!-- Start Slider -->         
   <div id="slider">
-    <div class="slide">
-      <img src="http://dummyimage.com/920x360/333333/666666&text=PHOTO" alt="TITLE">
+    <div class="slide" style="background-image: url(http://dummyimage.com/920x360/333333/666666&text=FIRST);">
       <div class="info">
         <h4>TITLE</h4>       
         <div class="date">Saturday, May 5</div>
         <div class="time">8pm</div>
         <a href="#/">RSVP</a>
-      </div>
+      </div>         
+    </div> 
+    <div class="slide" style="background-image: url(http://dummyimage.com/920x360/333333/666666&text=SECOND);">
+      <div class="info">
+        <h4>TITLE</h4>       
+        <div class="date">Saturday, May 5</div>
+        <div class="time">8pm</div>
+        <a href="#/">RSVP</a>
+      </div>          
     </div>
+    <div class="slide" style="background-image: url(http://dummyimage.com/920x360/333333/666666&text=THIRD);">
+      <div class="info">
+        <h4>TITLE</h4>       
+        <div class="date">Saturday, May 5</div>
+        <div class="time">8pm</div>
+        <a href="#/">RSVP</a>
+      </div>  
+    </div>        
   </div>    
-  <div class="slider_nav">
-    <a href="#/" class="active">&middot;</a>
-    <a href="#/">&middot;</a>
-    <a href="#/">&middot;</a>
-  </div>          
+  <div class="slider_nav"></div>          
   <div class="clear"></div>
   <!-- End Slider -->
   

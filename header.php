@@ -6,9 +6,6 @@
   <link rel="stylesheet" href="<?php bloginfo( 'stylesheet_directory' ); ?>/stylesheets/css/screen.css" type="text/css" media="screen">
 
   <link href="<?php bloginfo( 'stylesheet_directory' ); ?>/favicon.ico" rel="shortcut icon" type="image/x-icon">
-
-  <script src="http://code.jquery.com/jquery-1.6.4.min.js" type="text/javascript"></script>
-  <script src="<?php bloginfo( 'stylesheet_directory' ); ?>/javascripts/theroost.js" type="text/javascript"></script>
   
   <title><? is_front_page() ? bloginfo('description') : wp_title(''); ?> – <? bloginfo('name'); ?></title>
   
