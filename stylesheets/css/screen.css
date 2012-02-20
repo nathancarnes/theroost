@@ -48,6 +48,8 @@ html{background:#3f3c42 fixed url(../../images/backgrounds/html.png);padding:0;m
 a{color:#339999;text-decoration:none;-webkit-transition:all 0.2s ease-out;-moz-transition:all 0.2s ease-out;transition:all 0.2s ease-out;}a:hover{color:#157b7b;}
 h1,h2,h3,h4{font-family:'league-gothic',Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;padding-top:0;margin-top:0;font-weight:normal;}
 h2{text-transform:uppercase;font-size:36px;}
+h3{font-size:24px;margin-bottom:0px;}
+p{margin-top:0;}
 header.main{background:no-repeat bottom right url(../../images/divider.png);overflow:hidden;margin-bottom:40px;}header.main h1#logo{padding:0;margin:0;float:left;}header.main h1#logo a{display:block;height:128px;width:128px;background:url('../../images/logo.png');text-indent:-999em;}
 header.main #player{float:right;background:#aaa;text-indent:-999em;height:20px;width:300px;}
 header.main nav{float:right;clear:right;}header.main nav ul{padding:0;margin:0;list-style-type:none;margin-top:20px;}header.main nav ul li{padding:0;margin:0;float:left;margin-left:40px;}header.main nav ul li a{color:#616060;display:block;padding:10px;font-family:'league-gothic',Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;font-size:19px;text-transform:uppercase;}header.main nav ul li a:hover{color:#339999;}
