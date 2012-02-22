@@ -3,10 +3,11 @@
 <div class="left_column">
   <? /* If there are no posts to display, such as an empty archive page */ ?>
   <? if ( ! have_posts() ) : ?>
-  		<h1>Nope nope nope</h1>
-  		<p>Ain't nuttin' here</p>
-  		<? get_search_form(); ?>
-  <? endif; ?>
+		<h1>Nothing to see here, folks</h1>
+		<p>Move it along.</p>
+  <? elseif( is_archive() ): ?>		
+    <h1><? wp_title('', true); ?></h1>
+  <? endif; ?>           
 
   <? while ( have_posts() ) : the_post(); ?>  
     <article <? post_class(); ?> id="post-<? the_ID(); ?>">
@@ -15,11 +16,7 @@
   	    <div class="date"><? the_date(); ?></div>  
   	  </header>
       <section class="excerpt">
-      	<? if ( is_archive() || is_search() ) : ?>
-      			<? the_excerpt(); ?>
-      	<? else : ?>
-      			<? the_content( 'Read more...' ); ?>
-      	<? endif; ?>      
+        <? the_excerpt(); ?>
       </section>
       <footer>
         <ul>

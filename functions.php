@@ -29,5 +29,10 @@ function slug($str) {
   $str = preg_replace('/[^a-z0-9-]/', '-', $str);
   $str = preg_replace('/-+/', "-", $str);
   return $str;
+}               
+
+if ( function_exists('register_sidebar') ){
+  register_sidebar();
 }
+    
 ?>
