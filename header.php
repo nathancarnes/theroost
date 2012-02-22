@@ -25,7 +25,7 @@
       <? wp_nav_menu( array( 'container' => false, 'theme_location' => 'header-menu' ) ); ?>
     </nav>
     <div class="social">
-      follow us on <a href="#/">Facebook</a> <span class="ampersand">&amp;</span> <a href="#/">Twitter</a>
+      follow us on <a href="<? the_field('facebook_link', 'options'); ?>">Facebook</a> <span class="ampersand">&amp;</span> <a href="<? the_field('twitter_link', 'options'); ?>">Twitter</a>
     </div>    
   </header>    
   <section class="main">

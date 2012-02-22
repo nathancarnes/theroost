@@ -1,8 +1,6 @@
 <? get_header(); ?>
   <p id="masthead">
-    We are an independently run<br>
-    music venue that showcases artists in the intimacy<br>
-    of a living room.  
+    <? the_field('tagline'); ?>    
   </p>
    
   <!-- Start Slider -->         
