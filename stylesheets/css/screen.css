@@ -81,9 +81,9 @@ footer.main .social a.twitter{width:74px;background-image:url(../../images/twitt
 .featured_events .featured_event .cost{float:right;font-size:15px;margin-top:12px;}
 .featured_events .featured_event img{display:block;clear:both;margin-bottom:5px;}
 .featured_events .featured_event a{font-family:'league-gothic',Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif;font-size:26px;display:block;text-align:right;}
-.upcoming_shows{padding:0;margin:0;list-style-type:none;}.upcoming_shows li{margin:0 0 5px;padding:5px;overflow:hidden;}.upcoming_shows li.month{border:1px solid #999;border-width:1px 0;}
+.upcoming_shows{padding:0;margin:0;list-style-type:none;margin:10px 0;}.upcoming_shows li{margin:0 0 5px;padding:5px;overflow:hidden;}.upcoming_shows li.month{border:1px solid #999;border-width:1px 0;}
 .upcoming_shows li:first-child{border-top:0;}
-.upcoming_shows li h6{padding:0;margin:0;font-size:16px;line-height:1;font-weight:normal;font-style:italic;}
+.upcoming_shows li h6{padding:0;margin:0;font-size:16px;line-height:1;font-weight:normal;font-style:italic;padding-top:2px;}
 .upcoming_shows li .date,.upcoming_shows li .time{font-size:14px;color:#777575;}
 .upcoming_shows li .date{float:left;}
 .upcoming_shows li .time{float:right;}

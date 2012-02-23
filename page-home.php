@@ -11,7 +11,7 @@
       <div class="slide" style="background-image: url(<? the_field('event_banner_photo'); ?>);">
         <div class="info">
           <h4><? the_title(); ?></h4>       
-          <div class="date"><? the_field('event_date'); ?></div>
+          <div class="date"><?= date('l, M j', strtotime(get_field('event_date'))); ?></div>
           <div class="time"><? the_field('event_time'); ?></div>
           <? if(get_field('event_rvsp_link')): ?><a href="<? the_field('event_rvsp_link'); ?>">RSVP</a><? endif; ?>
         </div>         

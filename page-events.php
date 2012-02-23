@@ -24,39 +24,33 @@
 
 <div class="right_column">
   <h3>Upcoming Shows</h3>
-  <ol class="upcoming_shows">
-    <li class="month"><h6>July</h6></li>
-    <li>
-      <div class="artist">Artist name</div>
-      <div class="date">Saturday, May 5</div>
-      <div class="time">8pm</div>
-    </li>
-    <li>
-      <div class="artist">Artist name</div>
-      <div class="date">Saturday, May 5</div>
-      <div class="time">8pm</div>
-    </li>
-    <li>
-      <div class="artist">Artist name</div>
-      <div class="date">Saturday, May 5</div>
-      <div class="time">8pm</div>
-    </li>
-    <li class="month"><h6>August</h6></li>
-    <li>
-      <div class="artist">Artist name</div>
-      <div class="date">Saturday, May 5</div>
-      <div class="time">8pm</div>
-    </li>
-    <li>
-      <div class="artist">Artist name</div>
-      <div class="date">Saturday, May 5</div>
-      <div class="time">8pm</div>
-    </li>
-    <li>
-      <div class="artist">Artist name</div>
-      <div class="date">Saturday, May 5</div>
-      <div class="time">8pm</div>
-    </li>                  
+  <ol class="upcoming_shows">     
+    <? global $post; ?>  
+    <? $events = get_posts( array( 
+        'numberposts' => -1,
+        'orderby' => 'meta_value',
+        'meta_key' => 'event_date',
+        'order' => 'ASC',
+        'post_type' => 'events',
+        'post_status' => 'publish'      
+     )); ?>
+    <? foreach($events as $post): ?>  
+      <? setup_postdata($post); ?> 
+      <? if(strtotime(get_field('event_date')) > time()): ?>
+        <? $month = date('F', strtotime(get_field('event_date'))); ?>
+        <? if($last_month != $month): ?>
+          <li class="month"><h6><?= $month; ?></h6></li>
+          <? $last_month = $month; ?>
+        <? endif; ?>
+        <li>   
+          <div class="artist"><? the_title(); ?></div>
+          <div class="date"><?= date('l, F j', strtotime(get_field('event_date'))); ?></div>          
+          <div class="time"><? the_field('event_time'); ?></div>
+        </li>                                               
+      <? endif; ?>
+    <? endforeach; ?>
+    <? wp_reset_postdata(); ?>       
+        
   </ol>
 </div>
 
