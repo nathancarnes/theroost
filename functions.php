@@ -169,7 +169,7 @@ register_field_group(array (
   ),
   'menu_order' => 0,
 ));
-}
+
 register_field_group(array (
   'title' => 'Event Info',
   'fields' => 
@@ -301,7 +301,8 @@ register_field_group(array (
   ),
   'menu_order' => 0,
 ));
-}
+
+
 register_field_group(array (
   'title' => 'Options',
   'fields' => 
@@ -373,7 +374,7 @@ register_field_group(array (
   ),
   'menu_order' => 0,
 ));
-}
+
 register_field_group(array (
   'title' => 'Sidebar',
   'fields' => 
@@ -438,7 +439,7 @@ register_field_group(array (
   ),
   'menu_order' => 0,
 ));
-}
+
 register_field_group(array (
   'title' => 'Homepage Info',
   'fields' => 
@@ -521,7 +522,7 @@ of a living room.',
   ),
   'menu_order' => 0,
 ));
-}
+
 register_field_group(array (
   'title' => 'Event Page',
   'fields' => 
