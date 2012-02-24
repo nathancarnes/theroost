@@ -1,25 +1,20 @@
 <? get_header(); ?>
-<div class="left_column featured_events">
-  <div class="featured_event">
-    <div class="date">Saturday, May 5</div>
-    <div class="time">8pm</div>
-    <h4>Artist Name</h4>       
-    <div class="cost">
-      All Ages $10
-    </div>               
-    <img src="http://dummyimage.com/480x360/333333/666666&text=PHOTO" alt="TITLE">
-    <a href="#/">RSVP</a>
-  </div>   
-  <div class="featured_event">
-    <div class="date">Saturday, May 5</div>
-    <div class="time">8pm</div>
-    <h4>Artist Name</h4>       
-    <div class="cost">
-      All Ages $10
-    </div>               
-    <img src="http://dummyimage.com/480x360/333333/666666&text=PHOTO" alt="TITLE">
-    <a href="#/">RSVP</a>
-  </div>      
+<div class="left_column featured_events">  
+  <? global $post; ?>  
+  <? foreach(get_field('featured_events') as $post): ?>  
+    <? setup_postdata($post); ?>  
+    <div class="featured_event">
+      <div class="date"><?= date('l, M j', strtotime(get_field('event_date'))); ?></div>
+      <div class="time"><? the_field('event_time'); ?></div>
+      <h4><? the_title(); ?></h4>       
+      <div class="cost">
+        <?= get_field('event_all_ages') ? 'All Ages &ndash; ' : ''; ?><? the_field('event_price'); ?>
+      </div>               
+      <img src="<? the_field('event_medium_photo'); ?>" alt="<? the_title(); ?>">
+      <? if(get_field('event_rvsp_link')): ?><a href="<? the_field('event_rvsp_link'); ?>">RSVP</a><? endif; ?>
+    </div> 
+  <? endforeach; ?>
+  <? wp_reset_postdata(); ?>
 </div>                 
 
 <div class="right_column">
