@@ -11,6 +11,9 @@
     </div>
   </footer>                      
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  <!--[if lte IE 8]>
+    <script type="text/javascript" src="<?php bloginfo( 'stylesheet_directory' ); ?>/javascripts/selectivizr-min.js"></script>
+  <![endif]-->
   <script src="<?php bloginfo( 'stylesheet_directory' ); ?>/javascripts/jquery.cycle.js" type="text/javascript"></script>  
   <script src="<?php bloginfo( 'stylesheet_directory' ); ?>/javascripts/theroost.js" type="text/javascript"></script>  
 </body>                                                                                             

@@ -10,7 +10,11 @@
   <title><? is_front_page() ? bloginfo('description') : wp_title(''); ?> – <? bloginfo('name'); ?></title>
   
   <meta name="description" content="">  
-  <link rel="pingback" href="<? bloginfo( 'pingback_url' ); ?>">
+  <link rel="pingback" href="<? bloginfo( 'pingback_url' ); ?>">              
+  
+  <!--[if lt IE 9]>
+  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
   
   <script type="text/javascript" src="http://use.typekit.com/amo0egj.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
