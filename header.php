@@ -19,7 +19,7 @@
 </head>                                                                                              
 <body <? body_class(); ?>>    
   <header class="main">
-    <div id="player">player</div>
+    <!-- <div id="player">player</div> -->
     <h1 id="logo"><a href="<?= home_url( '/' ); ?>"><? bloginfo( 'name' ); ?></a></h1>
     <nav>    
       <? wp_nav_menu( array( 'container' => false, 'theme_location' => 'header-menu' ) ); ?>
