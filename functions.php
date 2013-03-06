@@ -79,7 +79,6 @@ register_post_type('artists', array(	'label' => 'Artists','description' => '','p
  * Use the commented out code to update the database with your activation code. 
  * You may place this code inside an IF statement that only runs on theme activation.
  */ 
-if(!get_option('acf_repeater_ac')) update_option('acf_repeater_ac', "QJF7-L4IX-UCNP-RF2W");
 if(!get_option('acf_options_ac')) update_option('acf_options_ac', "OPN8-FA4J-Y2LW-81LS");
 // if(!get_option('acf_flexible_content_ac')) update_option('acf_flexible_content_ac', "xxxx-xxxx-xxxx-xxxx");
 
